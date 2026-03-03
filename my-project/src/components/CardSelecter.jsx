@@ -14,20 +14,20 @@ export const CardSelecter = () => {
             />
           </div>
         </Link>
-        <Link to="/b&b" className="item item-2 ">
-          <div className="word w1">B&B</div>
+        <Link to="/antidote" className="item item-2 ">
+          <div className="word w1">Antidote</div>
           <div className="img flex ">
             <img
-              src="./BandB/B&Bworkimg.png"
+              src="./Antidote/antidote_img1.png"
               className="w-[150px] h-auto object-cover mt-5 "
             />
           </div>
         </Link>
-        <Link to="/kkcmaa" className="item item-3 ">
-          <div className="word w1">KK</div>
+        <Link to="/fixitmobile" className="item item-3 ">
+          <div className="word w1">Fixit Mobile</div>
           <div className="img flex ">
             <img
-              src="./KK/KKdesignimg.png"
+              src="./Fixit/fixit_img1.png"
               className="w-[150px] h-auto object-cover mt-5 "
             />
           </div>

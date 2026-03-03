@@ -106,7 +106,7 @@ const Antidote = () => {
             </p>
 
             <Link
-              to="https://www.antidotebyfnm.store"
+              to="https://ayodelarts.vercel.app"
               className="text-[16px] sm:text-[18px] md:text-[20px] cursor-pointer underline"
             >
               Click To View Site
