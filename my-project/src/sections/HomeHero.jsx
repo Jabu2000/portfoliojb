@@ -279,7 +279,7 @@ const HomeHero = () => {
                     className="card-title image-hover-target6 text-white items-center cursor-pointer z-[60]"
                   >
                     <span>Developed</span>
-                    <span className="sorts-mill-goudy-regular text-[40px]">
+                    <span className="sorts-mill-goudy-regular md:text-[40px] text-[20px]">
                       .
                     </span>
                   </Link>
@@ -287,7 +287,7 @@ const HomeHero = () => {
                     to="/webdevelope"
                     className="card-title image-hover-target6 text-white items-center cursor-pointer z-[60]"
                   >
-                    <span className="sorts-mill-goudy-regular text-[40px]">
+                    <span className="sorts-mill-goudy-regular md:text-[40px] text-[20px]">
                       .
                     </span>
                     <span>Developed</span>
@@ -296,13 +296,13 @@ const HomeHero = () => {
                 <div className="flip-card-back">
                   <div className="card-title text-white items-center">
                     <span>Developed</span>
-                    <span className="sorts-mill-goudy-regular text-[40px]">
+                    <span className="sorts-mill-goudy-regular md:text-[40px] text-[20px]">
                       .
                     </span>
                   </div>
                   <CardSelecter />
                   <div className="card-title text-white items-center">
-                    <span className="sorts-mill-goudy-regular text-[40px]">
+                    <span className="sorts-mill-goudy-regular md:text-[40px] text-[20px]">
                       .
                     </span>
                     <span>Developed</span>

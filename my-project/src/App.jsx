@@ -1,10 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ScrollTrigger } from "gsap/all";
+import { useEffect } from "react";
+import Lenis from "lenis";
+import gsap from "gsap";
+
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import WebDevelope from "./pages/WebDevelope";
 import WebDesigns from "./pages/WebDesigns";
 import Logos from "./pages/Logos";
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollTop from "./components/ScrollTop";
 import Footer from "./components/Footer";
 import AyodeleArt from "./projects/AyodeleArt";
 import BandB from "./projects/BandB";
@@ -16,10 +22,33 @@ import KK from "./projects/KK";
 import Antidote from "./projects/Antidote";
 import Fixitmobile from "./projects/Fixitmobile";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const App = () => {
+  useEffect(() => {
+    const lenis = new Lenis({
+      lerp: 0.05,
+      smoothWheel: true,
+    });
+
+    // expose lenis globally
+    window.lenis = lenis;
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+      delete window.lenis;
+    };
+  }, []);
   return (
     <div>
       <Navbar />
+      <ScrollTop />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />

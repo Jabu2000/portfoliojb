@@ -21,7 +21,7 @@ const HeroName = () => {
         </div>
       </div>
       <div className="flex justify-center ml-[80px] lg:mt-0 mt-[-30px]">
-        <h1 className="flex justify-center items-center 2xl:text-[245px] xl:text-[160px] lg:text-[130px] text-[70px] md:leading-0 leading-[70px] font-semibold">
+        <h1 className="flex justify-center items-center 2xl:text-[195px] xl:text-[150px] lg:text-[125px] text-[70px] md:leading-0 leading-[70px] font-semibold">
           jabulani longwe
         </h1>
       </div>
